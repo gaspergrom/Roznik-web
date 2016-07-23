@@ -43,10 +43,12 @@
 }
 #storitve{
   .owl-prev{
-    left: -50px;
+    left: -60px;
+    top: 25%;
   }
   .owl-next{
-    right: -50px;
+    right: -60px;
+    top: 35%;
   }
   .owl-stage, .owl-item{
     display: -ms-flex;

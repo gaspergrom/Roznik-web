@@ -8,11 +8,20 @@ header {
       height: 50px;
     }
   }
+  @media #{$medium-and-down} {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 980;
+  }
   h2, h3{
     font-weight: normal;
   }
   h2{
+    @media #{$medium-and-down} {
       font-size: 26px;
+    }
   }
   .mobile-content{
     @media #{$large-and-up}{
@@ -25,6 +34,7 @@ header {
   .main{
     padding: 15px 30px;
     border-bottom: solid 1px $color-grey-dark;
+    background-color: $color-white;
     &__right{
       @media #{$medium-and-down} {
         display: none;
@@ -36,6 +46,7 @@ header {
   }
   nav{
     width: 100%;
+    background-color: $color-grey-light;
     border-top: solid 1px $color-grey-dark;
     border-bottom: solid 2px $color-grey-dark;
     a{
@@ -76,11 +87,11 @@ header {
       left:0;
       width: 100%;
       height: 100%;
-      z-index: 999;
+      z-index: 990;
       display: block !important;
       justify-content: center;
       -webkit-justify-content: center;
-      background-color: rgba(0,0,0,0.85);
+      background-color: rgba(0,0,0,0.9);
       overflow: auto;
       padding-top: calc((100vh - 480px) / 2 - 30px);
       @include transition(0.2s ease-out);
@@ -96,8 +107,149 @@ header {
 		}
   }
   .header__btn{
+    z-index: 999;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    padding: 0;
+    width: 35px;
     @media #{$large-and-up}{
       display:none;
     }
+    &:focus{
+      outline: 0;
+    }
+    .line {
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        border-radius: 3px;
+        &:nth-child(1) {
+            top: 5px;
+            animation: first-line-close 0.4s;
+            background-color: $color-grey-dark;
+        }
+        &:nth-child(2) {
+            top: 13px;
+            @include transition(0s ease-out);
+            transition-delay: 0.2s;
+            background-color: $color-grey-dark;
+
+        }
+        &:nth-child(3) {
+            animation: second-line-close 0.4s;
+            top: 21px;
+            background-color: $color-grey-dark;
+        }
+    }
+    &--open {
+        .line {
+            &:nth-child(1) {
+                top: 13px !important;
+                animation: first-line-open 0.4s;
+                transform: rotate(45deg);
+                background-color: $color-white;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                background-color: $color-white;
+            }
+            &:nth-child(3) {
+                top: 13px !important;
+                animation: second-line-open 0.4s;
+                transform: rotate(-45deg);
+                background-color: $color-white;
+            }
+        }
+    }
   }
+}
+@-webkit-keyframes first-line-open {
+    0% {
+        top: 5px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
+    33% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
+    66% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-white;
+    }
+    100% {
+        top: 13px;
+        transform: rotate(45deg);
+        background-color: $color-white;
+    }
+}
+@-webkit-keyframes first-line-close {
+    0% {
+        top: 13px;
+        transform: rotate(45deg);
+        background-color: $color-white;
+    }
+    33% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-white;
+    }
+    66% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
+    100% {
+        top: 5px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
+}
+@-webkit-keyframes second-line-open {
+    0% {
+        top: 21px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
+    33% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
+    66% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-white;
+    }
+    100% {
+        top: 13px;
+        transform: rotate(-45deg);
+        background-color: $color-white;
+    }
+}
+@-webkit-keyframes second-line-close {
+    0% {
+        top: 13px;
+        transform: rotate(-45deg);
+        background-color: $color-white;
+    }
+    33% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-white;
+    }
+    66% {
+        top: 13px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
+    100% {
+        top: 21px;
+        transform: rotate(0deg);
+        background-color: $color-grey-dark;
+    }
 }

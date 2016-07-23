@@ -15,6 +15,9 @@ body {
   color: $color-grey-darker;
   background-color: $color-grey-lighter;
 	line-height: 1.6;
+  @media #{$medium-and-down} {
+    padding-top: 70px;
+  }
 }
 section {
 	position: relative;
@@ -110,4 +113,7 @@ form {
 p{
   margin: 0 0 10px 0;
   font-size: 16px;
+}
+.overflow{
+  overflow:visible;
 }
