@@ -1,0 +1,44 @@
+/*----------------------------------*\
+    Buttons
+\*----------------------------------*/
+.btn {
+		height: 54px;
+		padding: 0 45px;
+		border: 0;
+		font-size: 20px;
+		font-family: $font-primary;
+		font-weight: 500;
+		cursor: pointer;
+		text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    text-overflow: ellipsis;
+		@include transition(0.2s ease-out);
+
+		&--blue {
+				background-color: $color-blue-dark;
+				color: $color-white;
+				&:hover {
+						background-color: darken($color-blue-dark, 10%);
+				}
+		}
+    &--blue-light {
+				background-color: $color-blue-light;
+				color: $color-white;
+				&:hover {
+						background-color: darken($color-blue-light, 10%);
+				}
+		}
+		&--small{
+				font-size: 14px;
+				height: 45px;
+				padding: 0 30px;
+		}
+    &--right{
+      float: right;
+    }
+    &--center{
+      margin: 0 auto;
+    }
+
+}

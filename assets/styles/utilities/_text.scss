@@ -1,0 +1,36 @@
+/*----------------------------------*\
+    Text
+\*----------------------------------*/
+/*
+	Text properties
+*/
+.text{
+  &-blue-dark{
+    color: $color-blue-dark;
+  }
+  &-blue-light{
+    color: $color-blue-light;
+  }
+  &-white{
+    color:$color-white;
+  }
+}
+/* Align text left */
+.text-left {
+  text-align: left;
+}
+/* Align text in center */
+.text-center {
+  text-align: center;
+}
+/* Align text right */
+.text-right {
+  text-align: right;
+}
+/* Uppercase text */
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize{
+  text-transform:none;
+}

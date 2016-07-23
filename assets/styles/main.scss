@@ -1,0 +1,40 @@
+/*----------------------------------*\
+    Talc
+\*----------------------------------*/
+/*
+ TABLE OF CONTENTS
+    01. Variables....................Imported via gulp and can be found in _vars.scss
+    02. Utilities......................The general styles like align-center etc.
+    03. Components...................Other SCSS components like _dividers.scss, _navigation.scss etc.
+    04. Default Tags.................Like <body>, <h1> etc.
+*/
+/*
+	Variables
+*/
+@import 'vars';
+/*
+	Globals
+*/
+@import 'globals';
+/*
+	Utilities
+*/
+@import 'utilities/spacings';
+@import 'utilities/headings';
+@import 'utilities/images';
+@import 'utilities/links';
+@import 'utilities/text';
+@import 'utilities/buttons';
+/*
+	Grid
+*/
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+/*
+	Components
+*/
+@import 'components/jumbotron';
+@import 'components/card';
+@import 'components/carousel';
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel';
