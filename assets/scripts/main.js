@@ -36,4 +36,28 @@ $(function() {
   });
 
 
+  $("#storitve").owlCarousel({
+      loop: true,
+      dots:true,
+      dotsEach: true,
+      margin: 10,
+      nav: true,
+      navText: [
+      "<",
+      ">"
+      ],
+      responsive: {
+          0: {
+              items: 1
+          },
+          767: {
+              items: 3
+          },
+          991: {
+              items: 4
+          }
+      }
+  });
+
+
 });
