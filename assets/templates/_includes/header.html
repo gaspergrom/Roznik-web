@@ -1,27 +1,45 @@
 @@include(markdown('head.html'))
 <header>
-  <div class="flex flex--align-vertical flex--justify-space-between pr15 pl30 pt15 pb15">
+  <div class="flex flex--align-vertical main flex--justify-space-between">
     <div class="flex flex--align-vertical">
       <img src="images/euroservis.png" class="mr15">
       <h2 class="text-uppercase text-blue-light">Avto Roznik</h2>
     </div>
-    <div>
+    <div class="main__right">
       <h2 class="text-blue-light text-right">
-        041 691 561
+        <a href="tel:+38641691561">041 691 561</a>
       </h2>
       <div class="flex flex--justify-right">
         <button type="button" class="btn btn--blue-light text-uppercase">Nagradna igra</button>
       </div>
       <h3 class="text-blue-light text-right mt10">Servisiranje in vzdrževanje osebnih in dostavnih vozil</h3>
     </div>
+    <button type="button" class="header__btn">Open</button>
+
   </div>
-  <nav class="flex flex--justify-center">
-    <a href="." class="text-uppercase active">Domov</a>
-    <a href="storitve.html" class="text-uppercase">storitve</a>
-    <a href="o-podjetju.html" class="text-uppercase">o podjetju</a>
-    <a href="prednosti-euroservisa.html" class="text-uppercase">prednosti euroservisa</a>
-    <a href="partnerji.html" class="text-uppercase">partnerji</a>
-    <a href="akcije.html" class="text-uppercase">akcije</a>
-    <a href="kontakt.html" class="text-uppercase">kontakt</a>
+  <nav class="flex flex--justify-center flex--align-vertical">
+    <div class="flex flex--justify-center" style="height: 100%;">
+      <div class="links">
+        <a href="." class="text-uppercase active text-center">Domov</a>
+        <a href="storitve.html" class="text-uppercase text-center">storitve</a>
+        <a href="o-podjetju.html" class="text-uppercase text-center">o podjetju</a>
+        <a href="prednosti-euroservisa.html" class="text-uppercase text-center">prednosti euroservisa</a>
+        <a href="partnerji.html" class="text-uppercase text-center">partnerji</a>
+        <a href="akcije.html" class="text-uppercase text-center">akcije</a>
+        <a href="kontakt.html" class="text-uppercase text-center">kontakt</a>
+        <div class="mobile-content mt30 mb30">
+          <a href="tel:+38641691561">
+            <h2 class="text-blue-light text-center">
+              041 691 561
+            </h2>
+          </a>
+          <a href="https://goo.gl/maps/MdxKGQhZS832">
+            <h2 class="text-center text-blue-light">
+              <span>o</span>
+            </h2>
+          </a>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
