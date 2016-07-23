@@ -3,4 +3,20 @@
 \*----------------------------------*/
 footer{
 	background-color: $color-white;
+	border-top: solid 1px $color-grey;
+	border-bottom: solid 1px $color-grey;
+	h4{
+		font-weight: 400;
+	}
+	nav{
+		a{
+			padding: 10px 15px;
+			display: block;
+			font-size: 20px;
+			width: auto;
+			&:hover{
+				background-color: $color-grey-light;
+			}
+		}
+	}
 }
