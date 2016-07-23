@@ -25,8 +25,8 @@ $(function() {
       autoplaySpeed: 700,
       nav: true,
       navText: [
-      "<",
-      ">"
+      "<span class='mdi mdi-chevron-left'></span>",
+      "<span class='mdi mdi-chevron-right'></span>"
       ],
       responsive: {
           0: {
@@ -43,8 +43,8 @@ $(function() {
       margin: 10,
       nav: true,
       navText: [
-      "<",
-      ">"
+      "<span class='mdi mdi-chevron-left'></span>",
+      "<span class='mdi mdi-chevron-right'></span>"
       ],
       responsive: {
           0: {
@@ -62,5 +62,12 @@ $(function() {
       }
   });
 
-
+    var btn=$('.header__btn');
+    var header=$('header nav');
+    btn.click(function(e) {
+        e.preventDefault();
+        header.toggleClass('open');
+        btn.toggleClass('header__btn--open');
+        $('body').toggleClass("overflow");
+    });
 });
