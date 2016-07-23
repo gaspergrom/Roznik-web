@@ -2,4 +2,13 @@
   &--bottom-big{
     border-bottom: solid 9px $color-blue-dark;
   }
+  &--border-thin{
+    border: solid 1px $color-grey;
+    @include transition(0.2s ease-out);
+    &:hover{
+        -moz-box-shadow: 0px 0px 5px 1px #bbb;
+     -webkit-box-shadow: 0px 0px 5px 1px #bbb;
+             box-shadow: 0px 0px 5px 1px #bbb;
+    }
+  }
 }
