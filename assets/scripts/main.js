@@ -51,9 +51,12 @@ $(function() {
               items: 1
           },
           767: {
-              items: 3
+              items: 2
           },
           991: {
+              items:3
+          },
+          1399: {
               items: 4
           }
       }
