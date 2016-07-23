@@ -21,6 +21,10 @@ section {
 }
 nav{
   width: 100%;
+  ul{
+    list-style-type: none;
+    padding-left:0;
+  }
 }
 iframe {
   border: 0;
