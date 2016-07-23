@@ -1,0 +1,6 @@
+a{
+  @include transition(0.2s ease-out);
+  &.text-blue-dark:hover{
+    color: darken($color-blue-dark, 10%);
+  }
+}
