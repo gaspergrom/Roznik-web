@@ -32,6 +32,7 @@
     "run-sequence": "^1.2.1"
   },
   "dependencies": {
+    "mdi": "^1.6.50",
     "owl.carousel": "^2.1.4"
   }
 }
