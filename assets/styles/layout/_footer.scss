@@ -5,6 +5,16 @@ footer{
 	background-color: $color-white;
 	border-top: solid 1px $color-grey;
 	border-bottom: solid 1px $color-grey;
+	.first{
+		-webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+	}
+	.second{
+		-webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+	}
 	h4{
 		font-weight: 400;
 	}
@@ -18,5 +28,6 @@ footer{
 				background-color: $color-grey-light;
 			}
 		}
+
 	}
 }

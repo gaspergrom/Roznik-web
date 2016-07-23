@@ -48,8 +48,13 @@
   .owl-next{
     right: -50px;
   }
-  .owl-stage-outer{
-    margin-bottom: 30px;
+  .owl-stage, .owl-item{
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 .owl-prev, .owl-next{
