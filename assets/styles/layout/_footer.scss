@@ -11,6 +11,11 @@ footer{
 		 					flex-direction: column-reverse;
 		}
 	}
+	.second{
+		@media #{$extra-small-and-down} {
+			display: none;
+		}
+	}
 	h4{
 		font-weight: 400;
 	}
@@ -25,5 +30,10 @@ footer{
 			}
 		}
 
+	}
+}
+.piskotki{
+	@media #{$small-and-up} {
+		display: none;
 	}
 }

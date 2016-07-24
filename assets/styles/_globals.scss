@@ -18,6 +18,9 @@ body {
   @media #{$medium-and-down} {
     padding-top: 70px;
   }
+  @media #{$extra2-small-and-down}{
+    padding-top: 112px;
+  }
 }
 section {
 	position: relative;
@@ -116,4 +119,12 @@ p{
 }
 .overflow{
   overflow:visible;
+}
+.storitve{
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  @media #{$extra2-small-and-down}{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 }

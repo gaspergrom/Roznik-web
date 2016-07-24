@@ -8,6 +8,11 @@ header {
       height: 50px;
     }
   }
+  .header__logo{
+    @media #{$extra2-small-and-down}{
+      display:block;
+    }
+  }
   @media #{$medium-and-down} {
     position: fixed;
     top:0;
@@ -59,8 +64,8 @@ header {
         background-color: darken($color-grey-light, 10%);
       }
       &.active{
-        background-color: $color-grey-darker;
-        color: $color-red;
+        background-color: darken($color-grey-light, 10%);
+        color: $color-blue-light;
       }
       @media #{$medium-and-down}{
         display: block;
