@@ -44,20 +44,23 @@
 #storitve{
   .owl-prev{
     left: -60px;
-    top: 25%;
+    top: 35%;
   }
   .owl-next{
     right: -60px;
     top: 35%;
   }
   .owl-stage, .owl-item{
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+     display:flex;
   }
+  .item{
+      display: flex;
+      flex-basis: 100%;
+      p{
+          display: flex;
+          flex: 1;
+      }
+   }
 }
 .owl-prev, .owl-next{
   position: absolute;
@@ -71,12 +74,5 @@
   }
   @media #{$extra-small-and-down}{
     display: none;
-  }
-}
-.owl-item{
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  .item{
-    flex: 1;
   }
 }
